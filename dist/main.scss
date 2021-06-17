@@ -38,6 +38,9 @@ body {
 .nav {
   @include flexmix(flex, space-between, center);
   padding: 1% 1%;
+  @media (max-width: 700px) {
+    display: block;
+  }
 
   &-logo {
     img {
@@ -55,6 +58,10 @@ body {
       padding: 5px;
       &:hover {
         color: $text-color2;
+      }
+
+      @media (max-width: 700px) {
+        display: block;
       }
     }
   }
@@ -98,12 +105,18 @@ body {
   width: 98%;
   margin: 3% auto;
   @include flexmix(flex, center, flex-start);
+  @media (max-width: 950px) {
+    display: block;
+  }
 
   &-display {
     align-self: stretch;
     img {
       width: 500px;
       height: 100%;
+      @media (max-width: 950px) {
+        width: 100%;
+      }
     }
   }
 
@@ -153,6 +166,9 @@ body {
 
   &-cont {
     @include flexmix(flex, center, center);
+    @media (max-width: 950px) {
+      display: block;
+    }
     .onsale-item {
       margin: 5px;
       h5,
@@ -179,6 +195,9 @@ body {
 
   &-cont {
     @include flexmix(flex, center, center);
+    @media (max-width: 950px) {
+      display: block;
+    }
     .description-item {
       margin: 10px;
       h5,

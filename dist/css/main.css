@@ -19,6 +19,12 @@ body {
   padding: 1% 1%;
 }
 
+@media (max-width: 700px) {
+  .nav {
+    display: block;
+  }
+}
+
 .nav-logo img {
   width: 200px;
   height: 40px;
@@ -34,6 +40,12 @@ body {
 
 .nav-link a:hover {
   color: grey;
+}
+
+@media (max-width: 700px) {
+  .nav-link a {
+    display: block;
+  }
 }
 
 /*Hero section of the page*/
@@ -90,6 +102,12 @@ body {
           align-items: flex-start;
 }
 
+@media (max-width: 950px) {
+  .about {
+    display: block;
+  }
+}
+
 .about-display {
   -ms-flex-item-align: stretch;
       -ms-grid-row-align: stretch;
@@ -99,6 +117,12 @@ body {
 .about-display img {
   width: 500px;
   height: 100%;
+}
+
+@media (max-width: 950px) {
+  .about-display img {
+    width: 100%;
+  }
 }
 
 .about-content {
@@ -164,6 +188,12 @@ body {
           align-items: center;
 }
 
+@media (max-width: 950px) {
+  .onsale-cont {
+    display: block;
+  }
+}
+
 .onsale-cont .onsale-item {
   margin: 5px;
 }
@@ -193,6 +223,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 950px) {
+  .description-cont {
+    display: block;
+  }
 }
 
 .description-cont .description-item {
