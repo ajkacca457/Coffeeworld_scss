@@ -20,6 +20,19 @@ body {
   height: 20vh;
 }
 
+@mixin footerbg($lightbg: true) {
+  @if $lightbg {
+    background-color: $bg-chocholate;
+    padding: 1%;
+    text-align: center;
+  } @else {
+    background-color: $bg-darkchocholate;
+    padding: 1%;
+    text-align: center;
+    color: white;
+  }
+}
+
 /*Nav section of the page*/
 
 .nav {
@@ -37,7 +50,9 @@ body {
     a {
       text-decoration: none;
       color: $text-color1;
-      margin-left: 10px;
+      margin-left: 5px;
+      background-color: $bg-link;
+      padding: 5px;
       &:hover {
         color: $text-color2;
       }
@@ -183,6 +198,19 @@ body {
           background-color: rgba(243, 135, 11, 0.856);
         }
       }
+      img {
+        width: 100%;
+        height: 300px;
+      }
     }
+  }
+}
+
+/*footer section of the page*/
+
+.footer {
+  @include footerbg(true);
+  hr {
+    opacity: 0.2;
   }
 }
