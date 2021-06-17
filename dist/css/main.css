@@ -140,13 +140,13 @@ body {
 }
 
 /*Coffee Item section of the page*/
-.onsale {
+.onsale, .description {
   width: 80%;
   margin: 3% auto;
   text-align: center;
 }
 
-.onsale h3 {
+.onsale h3, .description h3 {
   color: grey;
 }
 
@@ -175,8 +175,44 @@ body {
   color: #e94470;
 }
 
-.onsale img {
+.onsale img, .description img {
   width: 300px;
   height: 250px;
+}
+
+/*Description section of the page*/
+.description-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.description-cont .description-item {
+  margin: 10px;
+}
+
+.description-cont .description-item h5,
+.description-cont .description-item h4 {
+  margin: 5px 0px;
+}
+
+.description-cont .description-item p {
+  text-align: justify;
+}
+
+.description-cont .description-item a {
+  background-color: rgba(206, 110, 0, 0.856);
+  padding: 1% 2%;
+  color: black;
+}
+
+.description-cont .description-item a:hover {
+  background-color: rgba(243, 135, 11, 0.856);
 }
 /*# sourceMappingURL=main.css.map */

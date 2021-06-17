@@ -156,3 +156,33 @@ body {
     height: 250px;
   }
 }
+
+/*Description section of the page*/
+
+.description {
+  @extend .onsale;
+
+  &-cont {
+    @include flexmix(flex, center, center);
+    .description-item {
+      margin: 10px;
+      h5,
+      h4 {
+        margin: 5px 0px;
+      }
+
+      p {
+        text-align: justify;
+      }
+      a {
+        background-color: rgba(206, 110, 0, 0.856);
+        padding: 1% 2%;
+        color: black;
+
+        &:hover {
+          background-color: rgba(243, 135, 11, 0.856);
+        }
+      }
+    }
+  }
+}
