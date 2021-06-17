@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Mate+SC&display=swap");
+body {
+  background-color: white;
+  font-family: "Mate SC", serif;
+}
+
+/*mixins*/
+/*Nav section of the page*/
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1% 1%;
+}
+
+.nav-logo img {
+  width: 200px;
+  height: 40px;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: black;
+  margin-left: 10px;
+}
+
+.nav-link a:hover {
+  color: grey;
+}
+
+/*Hero section of the page*/
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("../images/bg-img.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 98%;
+  margin: 0 auto;
+  min-height: 85vh;
+  text-align: center;
+  font-size: 130%;
+}
+
+.hero-content {
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  padding: 2%;
+}
+
+.hero-content button {
+  height: 40px;
+  border: none;
+  border-radius: 2px;
+  color: grey;
+  font-weight: bold;
+}
+
+.hero-content button:hover {
+  color: black;
+}
+
+/*About section of the page*/
+.about {
+  width: 98%;
+  margin: 2% auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.about-display {
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+}
+
+.about-display img {
+  width: 500px;
+  height: 100%;
+}
+
+.about-content {
+  background-color: #fde197;
+  padding: 2%;
+}
+
+.about-content h5,
+.about-content p {
+  margin: 10px 0px;
+}
+
+.banner {
+  width: 98%;
+  margin: 0 auto;
+  background-image: url("../images/banner.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 20vh;
+  text-align: right;
+}
+
+.banner h1 {
+  width: 50%;
+  margin-left: auto;
+  padding: 1%;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+/*# sourceMappingURL=main.css.map */

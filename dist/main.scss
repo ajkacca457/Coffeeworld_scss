@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Mate+SC&display=swap");
+@import "./partials/variables";
+
+body {
+  background-color: $bg-color;
+  font-family: $default-font;
+}
+
+/*mixins*/
+@mixin flexmix($display, $justify, $align) {
+  display: $display;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+/*Nav section of the page*/
+
+.nav {
+  @include flexmix(flex, space-between, center);
+  padding: 1% 1%;
+
+  &-logo {
+    img {
+      width: 200px;
+      height: 40px;
+    }
+  }
+
+  &-link {
+    a {
+      text-decoration: none;
+      color: $text-color1;
+      margin-left: 10px;
+      &:hover {
+        color: $text-color2;
+      }
+    }
+  }
+}
+
+/*Hero section of the page*/
+
+.hero {
+  @include flexmix(flex, center, center);
+  background: url("../images/bg-img.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 98%;
+  margin: 0 auto;
+  min-height: 85vh;
+  text-align: center;
+  font-size: 130%;
+
+  &-content {
+    background-color: $bg-transparent;
+    width: 100%;
+    padding: 2%;
+
+    button {
+      height: 40px;
+      border: none;
+      border-radius: 2px;
+      color: $text-color2;
+      font-weight: bold;
+
+      &:hover {
+        color: $text-color1;
+      }
+    }
+  }
+}
+
+/*About section of the page*/
+
+.about {
+  width: 98%;
+  margin: 2% auto;
+  @include flexmix(flex, center, flex-start);
+
+  &-display {
+    align-self: stretch;
+    img {
+      width: 500px;
+      height: 100%;
+    }
+  }
+
+  &-content {
+    background-color: $bg-chocholate;
+    padding: 2%;
+    h5,
+    p {
+      margin: 10px 0px;
+    }
+  }
+}
+
+.banner {
+  width: 98%;
+  margin: 0 auto;
+  background-image: url("../images/banner.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 20vh;
+  text-align: right;
+
+  h1 {
+    width: 50%;
+    margin-left: auto;
+    padding: 1%;
+    background-color: $bg-transparent;
+  }
+}
