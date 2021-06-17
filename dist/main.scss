@@ -74,7 +74,7 @@ body {
 
 .about {
   width: 98%;
-  margin: 2% auto;
+  margin: 3% auto;
   @include flexmix(flex, center, flex-start);
 
   &-display {
@@ -95,6 +95,7 @@ body {
   }
 }
 
+/*Banner section of the page*/
 .banner {
   width: 98%;
   margin: 0 auto;
@@ -109,5 +110,36 @@ body {
     margin-left: auto;
     padding: 1%;
     background-color: $bg-transparent;
+  }
+}
+
+/*Coffee Item section of the page*/
+
+.onsale {
+  width: 80%;
+  margin: 3% auto;
+  text-align: center;
+  h3 {
+    color: $text-color2;
+  }
+
+  &-cont {
+    @include flexmix(flex, center, center);
+    .onsale-item {
+      margin: 5px;
+      h5,
+      h4 {
+        margin: 5px;
+      }
+
+      h4 {
+        color: $text-color4;
+      }
+    }
+  }
+
+  img {
+    width: 300px;
+    height: 250px;
   }
 }
