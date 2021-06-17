@@ -13,6 +13,13 @@ body {
   align-items: $align;
 }
 
+@mixin banner($image) {
+  background-image: url($image);
+  background-position: center;
+  background-size: cover;
+  height: 20vh;
+}
+
 /*Nav section of the page*/
 
 .nav {
@@ -97,12 +104,9 @@ body {
 
 /*Banner section of the page*/
 .banner {
+  @include banner("../images/banner.jpg");
   width: 98%;
   margin: 0 auto;
-  background-image: url("../images/banner.jpg");
-  background-position: center;
-  background-size: cover;
-  height: 20vh;
   text-align: right;
 
   h1 {
@@ -110,6 +114,15 @@ body {
     margin-left: auto;
     padding: 1%;
     background-color: $bg-transparent;
+  }
+}
+
+.banner-2 {
+  @include banner("../images/banner2.jpg");
+  @extend .banner;
+  h1 {
+    margin-left: 0;
+    text-align: center;
   }
 }
 
